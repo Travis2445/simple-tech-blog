@@ -30,6 +30,7 @@ a.signup-link {
   margin: auto;
   padding: auto;
   width: 335px;
+  text-align: center;
 }
 
 #login-form,
