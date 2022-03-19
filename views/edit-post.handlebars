@@ -1,17 +1,29 @@
-<article>
-  <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
-    Edit Post
-  </h2>
-  <form class="edit-post-form">
-    <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <input name="content" type="text" value="{{post.content}}" />
+<div class="edit-post">
+    <header class="card-header">
+        <p class="title">
+            Edit Post
+        </p>
+    </header>
+    <div class="card-content">
+        <div class="content">
+            <form class="edit-post-form">
+                <label for="post-title">Title</label>
+                <div class="control">
+                    <input class="input" name="post-title" type="text" value="{{post.title}}" />  
+                </div>
+                </br>
+                <label for="content">Content</label>
+                <div class="control">
+                    <input class="input" name="content" type="text" value="{{post.content}}" /> 
+                </div>
+                </br>
+
+                <button type="submit" class="button is-success" id="btn">Update post</button>
+                <button type="button" class="button is-success" id="delete-post-btn">Delete post</button>
+            </form>
+        </div>
     </div>
-    <button type="submit" class="btn">Update post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
-  </form>
-</article>
+</div>
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
